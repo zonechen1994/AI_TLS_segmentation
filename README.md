@@ -1,6 +1,7 @@
 # AI_TLS_segmentation
 Using Deep learning to segment and quantify the TLS ratios across cancer types. For examples:
-<img width="425" alt="image" src="https://github.com/zonechen1994/AI_TLS_segmentation/assets/47493620/fc5b9671-3b38-469f-b7b4-3e3182f5bec4">
+![image](https://github.com/zonechen1994/AI_TLS_segmentation/assets/47493620/718c87da-6e25-44e0-9512-a9a69b4944eb)
+
 
 As you can see, we can use the trained DL model to segment TLS from the H&E images. The mIHC images show the labels of TLS. 
 
