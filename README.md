@@ -19,7 +19,7 @@ or, you can use the conda to install the whole packages.
 ## 2.For TLS segmentation in H&E tiles
 ### The model architecture
 The model architecture is in <code>lib/PSCANet_ab.py</code>. We used the EF-B0 as the backbone. We can modify different backbones. 
-The model is the same of our another article for segmenting polop area. <a href="https://arxiv.org/abs/2309.08234" title="Polyp segmentation model">Polyp segmentation model</a>
+The model is the same of our another article for segmenting polop area. <a href="https://arxiv.org/abs/2309.08234" title="Polyp segmentation model">Polyp segmentation model</a>, which was accepted in IEEE ICASSP 2024. 
 
 
 ### 2.1 Training TLS segmentation model in H&E tiles.
