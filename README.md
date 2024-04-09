@@ -63,7 +63,7 @@ In our project, we use TCGA-HNSC as an example. After downloading all HNSC slide
 
 <code>python get_slide_tls.py --cancer_type HNSC</code>
 
-⚠️ **Caution:**You need to convert your files into a format that can be recognized by the `openslide` package. We store the results for each patch. Depending on your specific needs, you can modify the detailed code. 
+⚠️ **Caution:** You need to convert your files into a format that can be recognized by the `openslide` package. We store the results for each patch. Depending on your specific needs, you can modify the detailed code. 
 
 For converting the format of H&E slide, we used the 'Pathomation' python package. You can follow my Bilibili account to see the tutorial: [format convertting](https://www.bilibili.com/video/BV1x94y1N7uw/)
 
