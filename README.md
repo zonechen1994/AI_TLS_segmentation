@@ -7,7 +7,7 @@ As demonstrated, the trained deep learning (DL) model is capable of segmenting T
 
 In our study, we trained the TLS segmentation model using two types of cancer: Esophageal Squamous Cell Carcinoma (ESCC) and Non-Small Cell Lung Cancer (NSCLC). Validation of our model was performed using data from TCGA-ESCC (a subset of TCGA-ESCA) and TCGA-NSCLC (comprising TCGA-LUAD and TCGA-LUSC datasets). Finally, to evaluate the model's generalizability, we tested it against 14 additional pancancer cohorts from the TCGA database."
 
-㊗️ Our study has been accepted by npj Precision Oncology!
+㊗️ **Our study has been accepted by npj Precision Oncology**! 🍺👏 
 
 ## 1. Enviroment setup
 
@@ -41,14 +41,16 @@ You can see the detail in the <code>Test.py</code>
 
 #### 3.1 Predict TLS regions combined with the lymphocyte number 
 
-We have released our TLS segmentation model !!!!! You can download the corresponding pretrained models by Baidu Netdisk[Pretrained model](https://pan.baidu.com/s/10w58utK-n9MMhayTSGVi4w) and the extracted code is "ptgf" or you can download by Google driver [Pretrained model](https://drive.google.com/drive/folders/12i30PYvQayrc-HPN3J-1Dnd0iyisL17-?usp=sharing). Then, you need to put these two model checkpoints into the "pretrained_model" folder.  
+👀 **We have released our TLS segmentation model now !!!!! **
+
+You can download the corresponding pretrained models by Baidu Netdisk [Pretrained model](https://pan.baidu.com/s/10w58utK-n9MMhayTSGVi4w) and the extracted code is **"ptgf"** or you can download by Google driver [Pretrained model](https://drive.google.com/drive/folders/12i30PYvQayrc-HPN3J-1Dnd0iyisL17-?usp=sharing). Then, you need to put these two model checkpoints into the "pretrained_model" folder.  
 
 
 As demonstrated in some previous studies, the TLS region needs to contain more than a certain number of lymphocytes. In this paper, we used the HoVer-Net from the Tiatoolbox to segment and quantify the number of lymphocytes.
 
 We take the <code>64_35.png</code> as an example. By running <code>python get_patch_tls.py</code>, we obtain the results of TLS segmentation and lymphocyte segmentation regions in the folder of <code>save_img_results</code>. The pretrained models for HoVer-Net and TLS segmentation can be found in the <code>pretrained_model</code> folder. 
 
-The corresponding parameters can been seen in the <code>get_patch_tls.py</code> file. You can adjust the parameters based on your results. 
+The corresponding parameters can been seen in the <code>get_patch_tls.py</code> file. You can adjust the parameters based on your results. Based this <code>get_patch_tls.py</code> file, you can predict all TLS regions in H&E slide by cropping patches.  
 
 
 
@@ -60,7 +62,9 @@ In our project, we use TCGA-HNSC as an example. After downloading all HNSC slide
 
 <code>python get_slide_tls.py --cancer_type HNSC</code>
 
-⚠️ You need to convert your files into a format that can be recognized by the `openslide` package. We store the results for each patch. Depending on your specific needs, you can modify the detailed code. 
+⚠️ **Caution：**You need to convert your files into a format that can be recognized by the `openslide` package. We store the results for each patch. Depending on your specific needs, you can modify the detailed code. 
+
+For converting the format of H&E slide, we used the 'Pathomation' python package. You can follow my Bilibili account to see the tutorial: [format convertting](https://www.bilibili.com/video/BV1x94y1N7uw/)
 
 Initially, you should run the `get_patch_tls.py` script to know the results of our pipeline.
 
