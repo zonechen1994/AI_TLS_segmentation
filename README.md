@@ -41,7 +41,7 @@ You can see the detail in the <code>Test.py</code>
 
 #### 3.1 Predict TLS regions combined with the lymphocyte number 
 
-👀 **We have released our TLS segmentation model now !!!!! **
+👀 **We have released our TLS segmentation model now !!!!!**
 
 You can download the corresponding pretrained models by Baidu Netdisk [Pretrained model](https://pan.baidu.com/s/10w58utK-n9MMhayTSGVi4w) and the extracted code is **"ptgf"** or you can download by Google driver [Pretrained model](https://drive.google.com/drive/folders/12i30PYvQayrc-HPN3J-1Dnd0iyisL17-?usp=sharing). Then, you need to put these two model checkpoints into the "pretrained_model" folder.  
 
