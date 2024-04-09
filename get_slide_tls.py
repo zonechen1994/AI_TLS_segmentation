@@ -26,7 +26,7 @@ from lib.PSCANet_ab import PSCANet
 # initialization for TLS segmentation model
 opt = getConfig()
 seg_model = PSCANet(opt).cuda()
-seg_model_path = './model_pth/PSCANet_efficientNet/efficientnet-b0/16_best_model.pth'
+seg_model_path = './pretrained/16_best_model.pth'
 seg_model.load_state_dict(torch.load(seg_model_path))
 seg_model.cuda()
 seg_model.eval()
@@ -35,7 +35,7 @@ seg_model.eval()
 from tiatoolbox.models.architecture import get_pretrained_model
 from tiatoolbox.models.architecture.hovernet import HoVerNet
 model = HoVerNet(num_types=5, mode='fast')
-pretrained = torch.load('hovernet_fast-monusac.pth')
+pretrained = torch.load('./pretrained/hovernet_fast-monusac.pth')
 model.load_state_dict(pretrained)
 model = model.cuda()
 model.eval()
