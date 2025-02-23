@@ -135,13 +135,13 @@ def train(train_loader, model, optimizer, epoch, test_path):
         dice_list.append(dataset_dice)
         #dict_plot[dataset].append(dataset_dice)
         
-        if dataset_loss < min_loss:
-            early_stop = 0
-        else:
-            early_stop += 1
+        #if dataset_loss < min_loss:
+        #    early_stop = 0
+        #else:
+        #    early_stop += 1
 
-         if early_stop == early_stopping:
-            break
+        #if early_stop == early_stopping:
+        #    break
         
         if meandice > best:
             best = meandice
